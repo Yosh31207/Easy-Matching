@@ -206,7 +206,7 @@ std::string check_optional(const std::optional<int>& value) {
 
 ### Matching Multiple Values
 
-Using `ds`, you can check multiple values.
+Using `ds` (stands for de-structure), you can check multiple values.
 
 ```C++
 #include "easymatch/easymatch.hpp"
@@ -433,7 +433,7 @@ match(x) (
     _         = "positive"s
 );
 
-// These syntax are also OK.
+// This syntax are also OK.
 match(x) (
     (_ <  0)  = "negative"s,
     when(0)   = "zero"s,
